@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Close.png" />
+    <None Remove="Clo_se.png" />
+    <None Remove="Logo.jpg" />
+    <None Remove="Lo_go.jpg" />
+    <None Remove="Minimise.png" />
+    <None Remove="Mini_mise.png" />
+    <None Remove="RestoreDown.png" />
+    <None Remove="Restore_Down.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Close.png" />
+    <Resource Include="Clo_se.png" />
+    <Resource Include="Logo.jpg" />
+    <Resource Include="Lo_go.jpg" />
+    <Resource Include="Minimise.png" />
+    <Resource Include="Mini_mise.png" />
+    <Resource Include="RestoreDown.png" />
+    <Resource Include="Restore_Down.png" />
+  </ItemGroup>
+
+</Project>
