@@ -21,8 +21,6 @@ namespace Food_Inventory
         public MainWindow()
         {
             InitializeComponent();
-            //Uri iconUri = new Uri("pack://application:,,,/WPFIcon2.ico", UriKind.RelativeOrAbsolute);
-            //this.Icon = BitmapFrame.Create(iconUri);
         }
 
         

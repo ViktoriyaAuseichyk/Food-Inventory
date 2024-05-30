@@ -5,49 +5,243 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Food_Inventory"
         mc:Ignorable="d"
-        Title="Food-Inventory" Height="1024" Width="1440" WindowState="Normal" WindowStartupLocation="CenterScreen" Background="#FFFAFAFB" MinWidth="720" MinHeight="512" ResizeMode="NoResize" WindowStyle="None">
-    <Grid MouseDown="Grid_MouseDown">
-        <WrapPanel x:Name="WindowStyleWrapPanel" Margin="0,0,0,974" Background="#FF4E5D7A" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" Width="1440">
-            <StackPanel x:Name="WindowStyleStackPanel_Labels" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Margin="19,10,0,0" >
-                <Button x:Name="LogoButton" Width="30" Height="30" BorderThickness="0,0,0,0">
-                    <Button.Background>
-                        <ImageBrush ImageSource="/Logo.jpg"/>
-                    </Button.Background>
-                </Button>
-                <Button x:Name="Food_InventoryButton" Content="Food-Inventory" Width="139" Height="25" Margin="0,-1,0,0" Background="#FF4E5D7A" Padding="0,-3,0,0" Foreground="#FFFAFAFA" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0,0,0,0" FontWeight="Bold"/>
-            </StackPanel>
-            <StackPanel x:Name="WindowStyleStackPanel_Buttons" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="1313,-31,0,0">
-                <Button x:Name="MinimiseButton" Width="30" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="0,-4,0,0" FontWeight="Bold" BorderThickness="0,0,0,0" Margin="0,0,10,-2" Click="MinimiseButton_Click">
-                    <Button.OpacityMask>
-                        <ImageBrush ImageSource="/Minimise.png" Stretch="Fill" TileMode="None"/>
-                    </Button.OpacityMask>
-                    <Button.Background>
-                        <ImageBrush ImageSource="/Minimise.png"/>
-                    </Button.Background>
-                </Button>
-                <Button x:Name="RestoreDownButton" Width="30" Height="30" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1,-4,1,0" BorderThickness="0,0,0,0" Foreground="#FFFAFAFB" Margin="0,0,10,0" Click="RestoreDownButton_Click">
-                    <Button.Background>
-                        <ImageBrush ImageSource="/RestoreDown.png"/>
-                    </Button.Background>
-                </Button>
-                <Button x:Name="CloseButton" Width="30" Height="30" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1,-4,1,0" BorderThickness="0,0,0,0" Foreground="#FFFAFAFB" Margin="0,0,10,0" Click="CloseButton_Click">
-                    <Button.Background>
-                        <ImageBrush ImageSource="/Close.png"/>
-                    </Button.Background>
-                </Button>
-            </StackPanel>
+        Title="Food-Inventory" Height="1024" Width="1440" WindowState="Normal" WindowStartupLocation="CenterScreen" Background="#FFFAFAFB" ResizeMode="NoResize" WindowStyle="None">
+    <Grid x:Name="MainWindowGrid" MouseDown="Grid_MouseDown" MinWidth="1440" MinHeight="1024">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-        </WrapPanel>
-        <WrapPanel x:Name="MenuWrapPanel" Margin="0,145,1095,95" Height="820" Width="345" Background="#FF4E5D7A" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" >
-            <StackPanel x:Name="MenuStackPanel" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,230,0,0">
-                <Button x:Name="MainButton" Content="ГЛАВНАЯ" FontSize="36" Background="#FFA7AEBD" HorizontalContentAlignment="Right" Width="300" BorderThickness="0,0,0,0" Height="60" Foreground="#FF4E5D7A" Padding="1,1,15,1" HorizontalAlignment="Right"/>
-                <Button x:Name="CategoriesButton" Content="КАТЕГОРИИ" Background="#FF4E5D7A" Foreground="#FFFAFAFB" HorizontalContentAlignment="Right" FontSize="36" Height="60" Padding="1,1,15,1" Width="300" BorderThickness="0,0,0,0"/>
-                <Button x:Name="ProductsButton" Content="ПРОДУКТЫ" Background="#FF4E5D7A" Foreground="#FFFAFAFB" HorizontalContentAlignment="Right" FontSize="36" Height="60" Padding="1,1,15,1" Width="300" BorderThickness="0,0,0,0"/>
-                <Button x:Name="DietButton" Content="ДИЕТЫ" Background="#FF4E5D7A" Foreground="#FFFAFAFB" HorizontalContentAlignment="Right" FontSize="36" Height="60" Padding="1,1,15,1" Width="300" BorderThickness="0,0,0,0"/>
-                <Button x:Name="LimitsButton" Content="ЛИМИТЫ" Background="#FF4E5D7A" Foreground="#FFFAFAFB" HorizontalContentAlignment="Right" FontSize="36" Height="60" Padding="1,1,15,1" Width="300" BorderThickness="0,0,0,0"/>
-                <Button x:Name="StatisticsButton" Content="СТАТИСТИКА" Background="#FF4E5D7A" Foreground="#FFFAFAFB" HorizontalContentAlignment="Right" FontSize="36" Height="60" Padding="1,1,15,1" Width="300" BorderThickness="0,0,0,0"/>
-            </StackPanel>
-        </WrapPanel>
+        <WrapPanel x:Name="WindowStyleWrapPanel" Grid.Column="0" Grid.ColumnSpan="105" Grid.Row="0" Grid.RowSpan="4" Background="#FF4E5D7A"/>
+        <StackPanel x:Name="WindowStyleStackPanel_Labels" Grid.Column="0" Grid.ColumnSpan="15" Grid.Row="1" Grid.RowSpan="2" Orientation="Horizontal" Margin="20,0,0,0" >
+            <Button x:Name="LogoButton" BorderThickness="0,0,0,0" MinHeight="27" MinWidth="27">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Logo.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Food_InventoryButton" Content="Food-Inventory" Margin="0,-1,0,0" Background="#FF4E5D7A" Padding="0,0,0,0" Foreground="#FFFAFAFA" FontSize="16" BorderThickness="0,0,0,0" FontWeight="Bold" MinWidth="139" MinHeight="25"/>
+        </StackPanel>
+        <StackPanel x:Name="WindowStyleStackPanel_Buttons" Grid.Column="90" Grid.ColumnSpan="15" Grid.Row="1" Grid.RowSpan="2"  Orientation="Horizontal" Margin="0,0,20,0" FlowDirection="RightToLeft">
+            <Button x:Name="CloseButton" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Padding="2,0,2,0" BorderThickness="0,0,0,0" Foreground="#FFFAFAFB" Margin="0,0,10,0" Click="CloseButton_Click" MinWidth="30" MinHeight="30">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Close.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="RestoreDownButton" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Padding="2,0,2,0" BorderThickness="0,0,0,0" Foreground="#FFFAFAFB" Margin="0,0,10,0" Click="RestoreDownButton_Click" MinWidth="30" MinHeight="30">
+                <Button.Background>
+                    <ImageBrush ImageSource="/RestoreDown.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="MinimiseButton" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Padding="2,0,2,0" FontWeight="Bold" BorderThickness="0,0,0,0" Click="MinimiseButton_Click" MinWidth="30" MinHeight="30">
+                <Button.OpacityMask>
+                    <ImageBrush ImageSource="/Minimise.png" Stretch="Fill" TileMode="None"/>
+                </Button.OpacityMask>
+                <Button.Background>
+                    <ImageBrush ImageSource="/Minimise.png"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+
+        <WrapPanel x:Name="MenuWrapPanel" Grid.Column="0" Grid.ColumnSpan="25" Grid.Row="10" Grid.RowSpan="59" Background="#FF4E5D7A" Orientation="Vertical"/>
+        <StackPanel x:Name="MenuStackPanel" Grid.Column="0" Grid.ColumnSpan="23" Grid.Row="26" Grid.RowSpan="49" MinWidth="300" MinHeight="360">
+            <Button x:Name="MainButton" Content="ГЛАВНАЯ" FontSize="36" Background="#FFA7AEBD" HorizontalContentAlignment="Right" BorderThickness="0,0,0,0" Foreground="#FF4E5D7A" Padding="1,1,15,1" MinWidth="300" MinHeight="60"/>
+            <Button x:Name="CategoriesButton" Content="КАТЕГОРИИ" Background="#FF4E5D7A" Foreground="#FFFAFAFB" HorizontalContentAlignment="Right" FontSize="36" Padding="1,1,15,1" BorderThickness="0,0,0,0" MinWidth="300" MinHeight="60"/>
+            <Button x:Name="ProductsButton" Content="ПРОДУКТЫ" Background="#FF4E5D7A" Foreground="#FFFAFAFB" HorizontalContentAlignment="Right" FontSize="36" Padding="1,1,15,1" BorderThickness="0,0,0,0" MinWidth="300" MinHeight="60"/>
+            <Button x:Name="DietButton" Content="ДИЕТЫ" Background="#FF4E5D7A" Foreground="#FFFAFAFB" HorizontalContentAlignment="Right" FontSize="36" Padding="1,1,15,1" BorderThickness="0,0,0,0" MinWidth="300" MinHeight="60"/>
+            <Button x:Name="LimitsButton" Content="ЛИМИТЫ" Background="#FF4E5D7A" Foreground="#FFFAFAFB" HorizontalContentAlignment="Right" FontSize="36" Padding="1,1,15,1" BorderThickness="0,0,0,0" MinWidth="300" MinHeight="60"/>
+            <Button x:Name="StatisticsButton" Content="СТАТИСТИКА" Background="#FF4E5D7A" Foreground="#FFFAFAFB" HorizontalContentAlignment="Right" FontSize="36" Padding="1,1,15,1" BorderThickness="0,0,0,0" MinWidth="300" MinHeight="60"/>
+        </StackPanel>
+
+        <WrapPanel x:Name="MainConteinerWrapPanel" Grid.Column="29" Grid.ColumnSpan="72" Grid.Row="10" Grid.RowSpan="59"  Background="#FFFAFAFB"/>
+        <Button x:Name="CurrentDateButton" Grid.Column="34" Grid.ColumnSpan="8" Grid.Row="13" Grid.RowSpan="3" BorderThickness="3,3,3,3" BorderBrush="#FF090B0F" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+            <Button.Background>
+                <ImageBrush ImageSource="/CurrentDate.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="MonthButton" Grid.Column="51" Grid.ColumnSpan="28" Grid.Row="10" Grid.RowSpan="6" Content="АПРЕЛЬ" FontSize="86" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="15,0,15,0" BorderThickness="0,0,0,0" Background="#FFFAFAFB" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FF090B0F"/>
+        <Button x:Name="YearButton" Grid.Column="88" Grid.ColumnSpan="8" Grid.Row="13" Grid.RowSpan="3" Content="Button"/>
+
+
 
 
 
