@@ -19,3 +19,7 @@ D:\Vika\GitHub\Food-Inventory\Food_Inventory\Food_Inventory\obj\Debug\net7.0-win
 D:\Vika\GitHub\Food-Inventory\Food_Inventory\Food_Inventory\obj\Debug\net7.0-windows\Food_Inventory.genruntimeconfig.cache
 D:\Vika\GitHub\Food-Inventory\Food_Inventory\Food_Inventory\obj\Debug\net7.0-windows\ref\Food_Inventory.dll
 D:\Vika\GitHub\Food-Inventory\Food_Inventory\Food_Inventory\obj\Debug\net7.0-windows\Food_Inventory_Content.g.cs
+D:\Vika\GitHub\Food-Inventory\Food_Inventory\Food_Inventory\obj\Debug\net7.0-windows\Styles.baml
+D:\Vika\GitHub\Food-Inventory\Food_Inventory\Food_Inventory\obj\Debug\net7.0-windows\App.baml
+D:\Vika\GitHub\Food-Inventory\Food_Inventory\Food_Inventory\obj\Debug\net7.0-windows\MonthSelectionWindow.g.cs
+D:\Vika\GitHub\Food-Inventory\Food_Inventory\Food_Inventory\obj\Debug\net7.0-windows\MonthSelectionWindow.baml

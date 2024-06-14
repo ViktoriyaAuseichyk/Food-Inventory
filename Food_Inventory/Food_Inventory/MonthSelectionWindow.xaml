@@ -1,0 +1,59 @@
+﻿<Window x:Class="Food_Inventory.MonthSelectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Food_Inventory"
+        mc:Ignorable="d"
+        Title="MonthSelectionWindow" Height="261" Width="371" WindowState="Normal" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" >
+    
+    <Grid x:Name="MonthSelectionWindow_Grid" MouseDown="Grid_MouseDown">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="WindowControlPanel_Grid" Grid.Column="0" Grid.Row="0" Style="{StaticResource WindowControlPanel_Grid}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel x:Name="WindowControlPanel_Buttons_StackPanel" Grid.Column="4" Grid.Row="0" Style="{StaticResource WindowControlPanel_Buttons_StackPanel}">
+                <Button x:Name="WindowControlPanel_Close_Button" Style="{StaticResource WindowControlPanel_Close_Button}" Click="WindowControlPanel_Close_Button_Click"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid x:Name="MainPanel_MonthsOfYear_Grid" Grid.Column="0" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Button x:Name="MainPanel_MonthsOfYear_January_Button" Grid.Column="0" Grid.Row="0" Content="ЯНВ" Style="{StaticResource MainPanel_MonthsOfYear_Button}" Click="MainPanel_MonthsOfYear_Button_Click"/>
+            <Button x:Name="MainPanel_MonthsOfYear_February_Button" Grid.Column="1" Grid.Row="0" Content="ФЕВ" Style="{StaticResource MainPanel_MonthsOfYear_Button}" Click="MainPanel_MonthsOfYear_Button_Click"/>
+            <Button x:Name="MainPanel_MonthsOfYear_March_Button" Grid.Column="2" Grid.Row="0" Content="МАР" Style="{StaticResource MainPanel_MonthsOfYear_Button}" Click="MainPanel_MonthsOfYear_Button_Click"/>
+            <Button x:Name="MainPanel_MonthsOfYear_April_Button" Grid.Column="3" Grid.Row="0" Content="АПР" Style="{StaticResource MainPanel_MonthsOfYear_Button}" Click="MainPanel_MonthsOfYear_Button_Click"/>
+
+            <Button x:Name="MainPanel_MonthsOfYear_May_Button" Grid.Column="0" Grid.Row="1" Content="МАЙ" Style="{StaticResource MainPanel_MonthsOfYear_Button}" Click="MainPanel_MonthsOfYear_Button_Click"/>
+            <Button x:Name="MainPanel_MonthsOfYear_June_Button" Grid.Column="1" Grid.Row="1" Content="ИЮН" Style="{StaticResource MainPanel_MonthsOfYear_Button}" Click="MainPanel_MonthsOfYear_Button_Click"/>
+            <Button x:Name="MainPanel_MonthsOfYear_July_Button" Grid.Column="2" Grid.Row="1" Content="ИЮЛ" Style="{StaticResource MainPanel_MonthsOfYear_Button}" Click="MainPanel_MonthsOfYear_Button_Click"/>
+            <Button x:Name="MainPanel_MonthsOfYear_August_Button" Grid.Column="3" Grid.Row="1" Content="АВГ" Style="{StaticResource MainPanel_MonthsOfYear_Button}" Click="MainPanel_MonthsOfYear_Button_Click"/>
+
+            <Button x:Name="MainPanel_MonthsOfYear_September_Button" Grid.Column="0" Grid.Row="2" Content="СЕН" Style="{StaticResource MainPanel_MonthsOfYear_Button}" Click="MainPanel_MonthsOfYear_Button_Click"/>
+            <Button x:Name="MainPanel_MonthsOfYear_October_Button" Grid.Column="1" Grid.Row="2" Content="ОКТ" Style="{StaticResource MainPanel_MonthsOfYear_Button}" Click="MainPanel_MonthsOfYear_Button_Click"/>
+            <Button x:Name="MainPanel_MonthsOfYear_November_Button" Grid.Column="2" Grid.Row="2" Content="НОЯ" Style="{StaticResource MainPanel_MonthsOfYear_Button}" Click="MainPanel_MonthsOfYear_Button_Click"/>
+            <Button x:Name="MainPanel_MonthsOfYear_December_Button" Grid.Column="3" Grid.Row="2" Content="ДЕК" Style="{StaticResource MainPanel_MonthsOfYear_Button}" Click="MainPanel_MonthsOfYear_Button_Click"/>
+        </Grid>
+    </Grid>
+</Window>

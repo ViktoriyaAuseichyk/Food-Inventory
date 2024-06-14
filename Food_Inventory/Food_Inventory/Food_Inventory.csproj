@@ -9,11 +9,28 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Close.png" />
-    <None Remove="CurrentDate.png" />
+    
+    <None Remove="Arrow_CurrentDate.png" />
+    
+    <None Remove="Arrow_CurrentDate_Click.png" /> 
+    <None Remove="Arrow_Left.png" /> 
+    <None Remove="Arrow_Left_Click.png" />
+    <None Remove="Arrow_Right.png" />
+    <None Remove="Arrow_Right_Click.png" />  
+    <None Remove="Close.png" />  
+    <None Remove="Close_Click.png" />
+    <None Remove="Delete.png" />
+    <None Remove="DishCategory.png" />
+    <None Remove="Full.png" />
+    <None Remove="Full_CurrentDay.png" />
+    <None Remove="Icon.png" />  
     <None Remove="Logo.jpg" />
     <None Remove="Minimise.png" />
-    <None Remove="RestoreDown.png" /> 
+    <None Remove="Minimise_Click.png" />
+    <None Remove="Minus.png" />
+    <None Remove="RestoreDown.png" />
+    <None Remove="RestoreDown_Click.png" />
+    <None Remove="Search.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,11 +38,24 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Arrow_CurrentDate.png" />
+    <Resource Include="Arrow_CurrentDate_Click.png" />
+    <Resource Include="Arrow_Left.png" />
+    <Resource Include="Arrow_Left_Click.png" />
+    <Resource Include="Arrow_Right.png" />
+    <Resource Include="Arrow_Right_Click.png" />
     <Resource Include="Close.png" />
-    <Resource Include="CurrentDate.png" />
+    <Resource Include="Close_Click.png" />
+    <Resource Include="Delete.png" />
+    <Resource Include="Full.png" />
+    <Resource Include="Full_CurrentDay.png" />
     <Resource Include="Logo.jpg" />
     <Resource Include="Minimise.png" />
+    <Resource Include="Minimise_Click.png" />
+    <Resource Include="Minus.png" />
     <Resource Include="RestoreDown.png" />
+    <Resource Include="RestoreDown_Click.png" />
+    <Resource Include="Search.png" />
   </ItemGroup>
 
 </Project>
