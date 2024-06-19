@@ -8,3 +8,6 @@ The application includes:
 - Accounting for food amounts by adding meals on the days of the month
 - Creating a complete report for the month
 - Ability to edit data for past months
+
+
+You can see the design layout of the project at [https://www.figma.com/design/ITvuQKS1wgPXKdr3g9cGmz/Food-Inventory?node-id=66-189&t=NEfwqTsmK9DZrWxl-0].
